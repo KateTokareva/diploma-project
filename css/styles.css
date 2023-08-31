@@ -263,6 +263,15 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
 }
+
+@media (max-width: 400px) {
+  .conf-step__chair {
+    font-size: 9px;
+    width: 2em;
+    height: 2em;
+  }
+}
+
 .conf-step__chair:not(:first-of-type) {
   margin-left: 4px;
 }
