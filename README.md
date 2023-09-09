@@ -10,3 +10,5 @@
 
 Используемые технологии:
 HTML, CSS, JavaScript
+
+https://katetokareva.github.io/diploma-project/
