@@ -39,7 +39,6 @@ for (let i = 0; i < dayNumber.length; i++) {
 	dayNumber[i].textContent = `${dayNow.getDate()}`;
 	dayNumber[i].parentNode.dataset.timestamp = todayStartDay + (i * (24 * 60 * 60 * 1000));
 	dayWeek[i].textContent = `${dayWeekList[dayNow.getDay()]}`;
-
 	if ((dayWeek[i].textContent === 'Вс') || (dayWeek[i].textContent === 'Сб')) {
 		dayNumber[i].parentNode.classList.add('page-nav__day_weekend');
 	} else {
@@ -56,6 +55,7 @@ navBtn.forEach(el => {
 		sendRequest(eventUpdate, updateHall);
 	})
 })
+navBtn[0].classList.add('page-nav__day_chosen');
 
 function updateHall(response) {
 	main.innerHTML = '';
